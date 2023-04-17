@@ -1,21 +1,30 @@
+/* giving all content 0 padding and 0 margin, with a border-box to adjust to page */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* giving the body a background color */
 body {
     background-color: #d9dcd6;
 }
 
+/* adding padding, background color, border-bottom to the navbar, as well as making the nav bar position sticky */
 .header {
     padding: 20px;
+    margin-bottom: 0px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
-    border-bottom: solid #d9dcd6;
+    border-bottom: solid #d9dcd6 3px;
+    /* border-left: solid #d9dcd6;
+    border-right: solid #d9dcd6; */
     position: sticky;
     top: 0px;
+    z-index: 1;
 }
 
 .header h1 {
@@ -80,11 +89,16 @@ p {
 
 .benefits {
     margin-right: 20px;
-    padding: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 32px;
     clear: both;
     float: right;
     width: 20%;
     height: 100%;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
@@ -141,6 +155,8 @@ p {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
@@ -150,15 +166,24 @@ p {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
+}
+
+#img-border {
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
 }
 
 .social-media-marketing {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
@@ -166,14 +191,20 @@ p {
 
 .search-engine-optimization img {
     max-height: 200px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 .online-reputation-management img {
     max-height: 200px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 .social-media-marketing img {
     max-height: 200px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 .search-engine-optimization h2 {
