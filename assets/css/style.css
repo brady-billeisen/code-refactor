@@ -1,42 +1,32 @@
-/* giving all content 0 padding and 0 margin, with a border-box to adjust to page */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-/* giving the body a background color */
 body {
     background-color: #d9dcd6;
 }
 
-/* adding padding, background color, border-bottom to the navbar, as well as making the nav bar position sticky */
-.header {
+/* changed all instances of .header to header to match element as well as the div tags to nav */
+header {
     padding: 20px;
-    margin-bottom: 0px;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
     border-bottom: solid #d9dcd6 3px;
-    /* border-left: solid #d9dcd6;
-    border-right: solid #d9dcd6; */
-    position: sticky;
-    top: 0px;
-    z-index: 1;
 }
 
-.header h1 {
+header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
-.header h1 .seo {
+header h1 .seo {
     color: #d9dcd6;
 }
 
-.header div {
+header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -44,11 +34,11 @@ body {
     font-size: 20px;
 }
 
-.header div ul {
+header nav ul {
     list-style-type: none;
 }
 
-.header div ul li {
+header nav ul li {
     position: relative;
     display: inline-block;
     margin-left: 25px;
@@ -64,25 +54,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* .header div ul li a::before {
-    content: '';
-    display: block;
-    height: 5px;
-    background-color: #d9dcd6;
-    position: absolute;
-    top: 0 auto;
-    width: 100%;
-    transition: all ease-in-out 250ms;
-} */
-
-/* a:hover::before {
-    width: 100%;
-} */
-
-p {
-    font-size: 16px;
-}
-
 .hero {
     height: 800px;
     width: 100%;
@@ -90,6 +61,38 @@ p {
     background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
     background-position: center;
+}
+
+/* changed instance of .content to main to match element */
+main {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/* consolidated all instances of main div into one selector */
+main section {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+/* consolidated all instances of main section img into one selector */
+main section img {
+    max-height: 200px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+/* consolidated all instances of main section h2 into one selector */
+main section h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
 }
 
 .float-left {
@@ -102,13 +105,8 @@ p {
     margin-left: 25px;
 }
 
-.content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
-}
-
-.benefits {
+/* changed all instances of .benefits to aside to match element */
+aside {
     margin-right: 20px;
     padding-top: 20px;
     padding-left: 20px;
@@ -124,132 +122,37 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
+/* consolidated all instances of aside div into one selector */
+aside div {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+/* consolidated all instances of aside div h3 into one selector */
+aside div h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+/* consolidated all instances of aside div img into one selector */
+aside div img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    border-bottom-left-radius: 30px;
-    border-top-right-radius: 30px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    border-bottom-left-radius: 30px;
-    border-top-right-radius: 30px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-#img-border {
-    border-bottom-left-radius: 30px;
-    border-top-right-radius: 30px;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    border-bottom-left-radius: 30px;
-    border-top-right-radius: 30px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
-    max-height: 200px;
-    border-top-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-    border-top-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-    border-top-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-}
-
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.footer {
+/* changed all instances of .footer to footer to match element */
+footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
-.footer h2 {
+footer h2 {
     font-size: 20px;
+}
+
+p {
+    font-size: 16px;
 }
