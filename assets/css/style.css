@@ -75,8 +75,8 @@ main section {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
-    border-bottom-left-radius: 30px;
-    border-top-right-radius: 30px;
+    /* border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px; */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
@@ -85,8 +85,8 @@ main section {
 /* consolidated all instances of main section img into one selector */
 main section img {
     max-height: 200px;
-    border-top-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+    /* border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px; */
 }
 
 /* consolidated all instances of main section h2 into one selector */
@@ -116,8 +116,8 @@ aside {
     float: right;
     width: 20%;
     height: 100%;
-    border-bottom-left-radius: 30px;
-    border-top-right-radius: 30px;
+    /* border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px; */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
