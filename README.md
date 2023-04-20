@@ -6,8 +6,16 @@ For this project I refactored the code for an SEO company named "Horiseon", in o
 ## Design
 For the design of this application I didn't want to get too carried away and stray away from the assignment at hand, so I just made a couple small ajdustments. First I added a 3px border-bottom to the nav bar to create a bigger distinction between the nav bar and the content on the application, and then I added a hover to all the links that will highlight, and underline them when the mouse is hovering over, to let the user know that they are clickable links.
 
+## Visual
+![screenshot](./assets/images/Horiseon-Home.png)
+
 ## Author & Acknowledgements
 Thank you to Anthony Cooper for answering the questions I had regarding this project, as well as coaching me through it!
+
+## Resources
+[Deployed Site](https://brady-billeisen.github.io/code-refactor/)
+
+[Github Repository](https://github.com/brady-billeisen/code-refactor)
 
 ## License
 For this project I used an MIT license
